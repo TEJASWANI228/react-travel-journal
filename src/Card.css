@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0 300px;
+    justify-content: left;
+    gap: 2rem;
+    margin-bottom: 2.4rem;
+    margin-top: 1.6rem;
+    max-width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: stretch;
+}
+.card-container .main-img{
+    border-radius: 0.9rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main--container{
+    flex: 0 0 290px;
+    display: block;
+}
+
+.info{
+    padding: 1.5rem 0;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.location{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin-bottom: .6rem;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.date{
+    margin-bottom: .8rem;
+}
+
+.card-container .small-icon {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+}
+
+.location h6{
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: .8rem;
+}
+@media only screen and(min-width: 277px) and (max-width: 399px) {
+    .main--container{
+        display: flex;
+        justify-content: center;
+    }
+    .card-container{
+        gap:1.2rem;
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .main--container{
+        flex: 0 0 140px;
+    }
+    .title{
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .description{
+        font-size: 11.5px;
+    }
+    .location a{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 400px){
+    .card-container{
+        padding-inline-start: 0 40px;
+        gap: 1.5rem;
+    }
+    .main--container{
+        flex: 0 0 180px;
+    }
+    .title{
+        font-size: 1 rem;
+        margin-bottom: .8rem;
+    }
+    .description{
+        font-size: 10px;
+        font-weight: 200px;
+    }
+    .location a{
+        font-size: 10px;
+    }
+}
+ 
+@media only screen and (min-width: 822px) {
+    .location h6{
+        font-size: 14px;
+    }
+    .date{
+        font-size: 12px;
+    }
+    .location a{
+        font-size: 14px;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .card-container{
+        padding: 0 200px;
+    }
+    .main--container{
+        flex: 0 0 240px;
+    }
+     .title{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+     }
+    }
+@media only screen and (min-width: 1080px) {
+    .location h6{
+        font-size: 14px;
+    }
+    .date{
+        font-size: 12px;
+    }
+    .location a{
+        font-size: 14px;
+    }
+    .description{
+        font-size:15px;
+    }
+    .card-container{
+        padding: 0 300px;
+    }
+    .title{
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+    }
+}
